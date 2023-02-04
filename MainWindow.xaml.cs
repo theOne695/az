@@ -36,14 +36,13 @@ namespace WpfApp3
             button7.IsEnabled = false;
             button8.IsEnabled = false;
             button9.IsEnabled = false;
-            gm.IsEnabled = true;
-            // Label.Text = "Текущий ход: игрок 1";
+            game.IsEnabled = true;
 
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            switch(player)
+            switch (player)
             {
                 case 1:
                     sender.GetType().GetProperty("Content").SetValue(sender, "х");
@@ -54,10 +53,9 @@ namespace WpfApp3
                     player = 1;
                     break;
             }
-            //MessageBox.Show(sender.GetType().GetProperty("Name").GetValue(sender).ToString());
-            sender.GetType().GetProperty("Content").SetValue(sender, "x");
+
         }
-        private void gm_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             button1.IsEnabled = true;
             button2.IsEnabled = true;
@@ -79,6 +77,9 @@ namespace WpfApp3
             button8.Content = "";
             button9.Content = "";
         }
-
+        private void win()
+        {
+            
+        }
     }
 }
