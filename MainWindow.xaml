@@ -5,19 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="730">
-    <Grid>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="100,86,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.5,0.5"/>
-        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Margin="205,86,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.508,0.579"/>
-        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Margin="310,86,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.508,0.579"/>
-        <Button x:Name="button4" Content="" HorizontalAlignment="Left" Margin="100,194,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.508,0.579"/>
-        <Button x:Name="button5" Content="" HorizontalAlignment="Left" Margin="205,194,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.508,0.579"/>
-        <Button x:Name="button6" Content="" HorizontalAlignment="Left" Margin="310,194,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.508,0.579"/>
-        <Button x:Name="button7" Content="" HorizontalAlignment="Left" Margin="100,302,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.508,0.579"/>
-        <Button x:Name="button8" Content="" HorizontalAlignment="Left" Margin="205,302,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.508,0.579"/>
-        <Button x:Name="button9" Content="" HorizontalAlignment="Left" Margin="310,302,0,0" VerticalAlignment="Top" Height="103" Width="100" FontSize="85" Click="button1_Click" RenderTransformOrigin="0.508,0.579"/>
-        <Button x:Name="game" Content="Нажмите,чтобы начать игру." HorizontalAlignment="Left" Margin="437,47,0,0" VerticalAlignment="Top" Width="244" Height="70" Click="Button_Click" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Height="35" Margin="130,34,0,0" TextWrapping="Wrap" Text="КРЕСТИКИ-НОЛИКИ" VerticalAlignment="Top" Width="245" RenderTransformOrigin="0.502,0.558" FontSize="25"/>
-
+        Title="MainWindow" Height="450" Width="355">
+    <Grid HorizontalAlignment="Right" Width="355">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="363*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="75,3,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Center" Margin="0,3,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Margin="215,3,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="button4" Content="" HorizontalAlignment="Left" Margin="75,73,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="button5" Content="" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="button6" Content="" HorizontalAlignment="Left" Margin="215,73,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="button7" Content="" HorizontalAlignment="Left" Margin="75,143,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="button8" Content="" HorizontalAlignment="Center" Margin="0,143,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="button9" Content="" HorizontalAlignment="Left" Margin="215,143,0,0" VerticalAlignment="Top" Height="65" Width="65" Click="button_Click" IsEnabled="False" Grid.Row="1"/>
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" Text="Крестики-Нолики" FontSize="17" VerticalAlignment="Top"/>
+        <Button x:Name="NewGame" Content="Новая игра" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" Height="57" Width="222" FontSize="18" Click="NewGame_Click" Grid.Row="1" />
     </Grid>
 </Window>
